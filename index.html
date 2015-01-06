@@ -2,48 +2,48 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Invoice</title>
+		<title>Rechnung</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="license" href="http://www.opensource.org/licenses/mit-license/">
 		<script src="script.js"></script>
 	</head>
 	<body>
 		<header>
-			<h1>Invoice</h1>
+			<h1>Rechnung</h1>
 			<address contenteditable>
-				<p>Jonathan Neal</p>
-				<p>101 E. Chapman Ave<br>Orange, CA 92866</p>
-				<p>(800) 555-1234</p>
+				<p>Jonathan Jenne</p>
+				<p>Gießener Straße 37<br>35435 Wettenberg</p>
+				<p>(0641) 399 7 888 0</p>
 			</address>
-			<span><img alt="" src="logo.png"><input type="file" accept="image/*"></span>
+			<!--<span><img alt="" src="logo.png"><input type="file" accept="image/*"></span>-->
 		</header>
 		<article>
 			<h1>Recipient</h1>
 			<address contenteditable>
-				<p>Some Company<br>c/o Some Guy</p>
+				<p>Firma<br>Verantwortlicher</p>
 			</address>
 			<table class="meta">
 				<tr>
-					<th><span contenteditable>Invoice #</span></th>
-					<td><span contenteditable>101138</span></td>
+					<th><span contenteditable>Rechnungsnr.</span></th>
+					<td><span contenteditable>00012015</span></td>
 				</tr>
 				<tr>
-					<th><span contenteditable>Date</span></th>
-					<td><span contenteditable>January 1, 2012</span></td>
+					<th><span contenteditable>Datum</span></th>
+					<td><span contenteditable>1. Januar 2015</span></td>
 				</tr>
 				<tr>
-					<th><span contenteditable>Amount Due</span></th>
+					<th><span contenteditable>Betrag</span></th>
 					<td><span id="prefix" contenteditable>$</span><span>600.00</span></td>
 				</tr>
 			</table>
 			<table class="inventory">
 				<thead>
 					<tr>
-						<th><span contenteditable>Item</span></th>
-						<th><span contenteditable>Description</span></th>
-						<th><span contenteditable>Rate</span></th>
-						<th><span contenteditable>Quantity</span></th>
-						<th><span contenteditable>Price</span></th>
+						<th><span contenteditable>Bezeichnung</span></th>
+						<th><span contenteditable>Beschreibung</span></th>
+						<th><span contenteditable>Einzelpreis</span></th>
+						<th><span contenteditable>Anzahl</span></th>
+						<th><span contenteditable>Gesamtpreis</span></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -59,21 +59,21 @@
 			<a class="add">+</a>
 			<table class="balance">
 				<tr>
-					<th><span contenteditable>Total</span></th>
+					<th><span contenteditable>Gesamt</span></th>
 					<td><span data-prefix>$</span><span>600.00</span></td>
 				</tr>
 				<tr>
-					<th><span contenteditable>Amount Paid</span></th>
+					<th><span contenteditable>Bereits gezahlt</span></th>
 					<td><span data-prefix>$</span><span contenteditable>0.00</span></td>
 				</tr>
 				<tr>
-					<th><span contenteditable>Balance Due</span></th>
+					<th><span contenteditable>Restbetrag</span></th>
 					<td><span data-prefix>$</span><span>600.00</span></td>
 				</tr>
 			</table>
 		</article>
 		<aside>
-			<h1><span contenteditable>Additional Notes</span></h1>
+			<h1><span contenteditable>Weitere Bemerkungen</span></h1>
 			<div contenteditable>
 				<p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
 			</div>
